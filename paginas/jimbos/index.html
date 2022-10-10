@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peluquería Jimbo's</title>
+    <link rel="preload" href="css/normalize.css" as="style" />
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <link rel="preload" href="css/styles.css" as="style" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Galada&family=Lato:wght@700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="cabecera">
+        <div class="contenidoCabecera">
+          <div>
+            <h1>JIMBO's</h1>
+          </div>
+          <div>
+            <h2>Peluquería y SPA</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="navegacion">
+        <nav class="navegacion__contenedor">
+          <a href="index.html">Inicio</a>
+          <a href="nosotros.html">Nosotros</a>
+          <a href="servicios.html">Servicios</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+      </div>
+    </header>
+    <main class="contenedor sombra">
+      <div class="descripcion-sitio">
+        <h3>Bienvenido a Jimbo's</h3>
+        <h3>peluqueria y SPA de calidad</h3>
+        <p>
+          En JIMBO's disponemos de las más novedosas técnicas que existen en el
+          mercado asesorándote para resaltar tu imagen. Nuestros expertos te
+          ayudarán a elegir el servicio que más se adapte a tus exigencias.
+        </p>
+      </div>
+
+      <div class="nosotros">
+        <h3>Sobre nosotros</h3>
+        <p>
+          Jinm Pardo se inicia en el mundo de la peluquería con 15 años. En 2015
+          se abre la peluquería JIMBO's. Peluquero por vocación, se considera
+          también un hombre de negocios, totalmente vinculado al mundo de las
+          peluquerías, por eso en el año 2010 comienza a forjar las bases para
+          franquiciar su modelo de negocio.
+        </p>
+        <a class="boton" href="nosotros.html">Saber mas de nosotros</a>
+      </div>
+
+      <h3 class="servicios_titulo">Nuestros servicios</h3>
+      <div class="servicios">
+        <section class="servicio">
+          <div class="servicio__imagen servicio__imagen--spaHombre"></div>
+          <h4 class="servicio__titulo">Spa hombres</h4>
+          <p class="servicio__descripcion">
+            Diseñado para el hombre en un espacio cómodo y ambientado,
+            combinando el cuidado facial y la relajación.
+          </p>
+        </section>
+
+        <section class="servicio">
+          <div class="servicio__imagen servicio__imagen--spaMujer"></div>
+          <h4 class="servicio__titulo">Spa mujeres</h4>
+          <p class="servicio__descripcion">
+            Consiéntete, relájate y rejuvenece con nuestro servicio de SPA
+            Nuestros tratamientos incluyen masajes, faciales, exfoliación
+            corporal, manicures, pedicuras, y más.
+          </p>
+        </section>
+
+        <section class="servicio">
+          <div class="servicio__imagen servicio__imagen--peluqueria"></div>
+          <h4 class="servicio__titulo">Peluquería</h4>
+          <p class="servicio__descripcion">
+            Las últimas tendencias en cortes, recogidos, tintes, mechas y
+            peinados los podrás encontrar en JIMBO´s. Ofrecemos todo tipo de
+            servicios de peluquería y estética.
+          </p>
+        </section>
+
+        <section class="servicio">
+          <div class="servicio__imagen servicio__imagen--barberia"></div>
+          <h4 class="servicio__titulo">Barbería</h4>
+          <p class="servicio__descripcion">
+            En JIMBO's podrás encontrar todo lo que necesitas para el cuidado
+            masculino: corte de pelo, peinado, tratamiento, afeitado, matizado,
+            etc. Sácale el mayor partido a tu barba.
+          </p>
+        </section>
+      </div>
+      <div class="mas-servicios">
+        <a class="boton" href="servicios.html">Mira todos nuestros servicios</a>
+      </div>
+
+      <h3 class="clientes__titulo">Nuestros clientes</h3>
+      <div class="clientes">
+        <section class="cliente">
+          <div class="cliente__imagen cliente__imagen--cliente1"></div>
+          <p class="cliente__descripcion">
+            "Me gustó porque todo es color rosa ¡me hacia sentir como una
+            princesa!, Jinm me atendió super lindo y es muy conversador... pero
+            casi me deja calva"
+          </p>
+          <h4 class="cliente__nombre">Alexandra G.</h4>
+        </section>
+
+        <section class="cliente">
+          <div class="cliente__imagen cliente__imagen--cliente2"></div>
+          <p class="cliente__descripcion">
+            "Mi vida cambio gracias al estilo artistico y delicado de JIMBO's,
+            su atencion es exquisita como su sentido inocente del humor y sus
+            chismes picarescos. adoro JIMBO´s!!!"
+          </p>
+          <div class="cliente-nombre">
+            <h4 class="cliente__nombre">Mario C.</h4>
+          </div>
+        </section>
+
+        <section class="cliente">
+          <div class="cliente__imagen cliente__imagen--cliente3"></div>
+          <p class="cliente__descripcion">
+            "La atencion es muy agradable, es super higienico y ordenado todo,
+            quede muy satisfecha, muy buen servicio por parte de Jinm y todos su
+            muchachos."
+          </p>
+          <h4 class="cliente__nombre">Alejandra C.</h4>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <script>
+        const d = new Date();
+        let year = d.getFullYear();
+        document.write(
+          "Copyright ©" + year + "  | Página hecha por Jhon Jairo Gavilán R."
+        );
+      </script>
+      <a href="mailto:gavilanrodriguez@gmail.com">gavilanrodriguez@gmail.com</a>
+    </footer>
+  </body>
+</html>

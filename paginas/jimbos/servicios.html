@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peluquería Jimbo's</title>
+    <link rel="preload" href="css/normalize.css" as="style" />
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <link rel="preload" href="css/styles.css" as="style" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Galada&family=Lato:wght@700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="cabecera">
+        <div class="contenidoCabecera">
+          <div>
+            <h1>JIMBO's</h1>
+          </div>
+          <div>
+            <h2>Peluquería y SPA</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="navegacion">
+        <nav class="navegacion__contenedor">
+          <a href="index.html">Inicio</a>
+          <a href="nosotros.html">Nosotros</a>
+          <a href="servicios.html">Servicios</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+      </div>
+    </header>
+    <main class="contenedor sombra">
+      <h3 class="servicios_titulo">Nuestros servicios</h3>
+      <p class="resumen-nosotros">
+        Cortes con las últimas tendencias, maquillajes sensacionales, masajes
+        capilares, depilación, color y muchos servicios más que resaltaran tu
+        belleza.
+      </p>
+
+      <div class="pagServicios">
+        <section class="pagServicio">
+          <div class="pagServicio__imagen pagServicio__imagen--spaHombre"></div>
+          <h4 class="pagServicio__titulo">Spa hombres</h4>
+          <p class="pagServicio__descripcion">
+            Diseñado para el hombre en un espacio cómodo y ambientado,
+            combinando el cuidado facial y la relajación.
+          </p>
+        </section>
+
+        <section class="pagServicio">
+          <div class="pagServicio__imagen pagServicio__imagen--spaMujer"></div>
+          <h4 class="pagServicio__titulo">Spa mujeres</h4>
+          <p class="pagServicio__descripcion">
+            Consiéntete, relájate y rejuvenece con nuestro servicio de SPA
+            Nuestros tratamientos incluyen masajes, faciales, exfoliación
+            corporal, manicures, pedicuras, y más.
+          </p>
+        </section>
+
+        <section class="pagServicio">
+          <div
+            class="pagServicio__imagen pagServicio__imagen--peluqueria"
+          ></div>
+          <h4 class="pagServicio__titulo">Peluquería</h4>
+          <p class="pagServicio__descripcion">
+            Las últimas tendencias en cortes, recogidos, tintes, mechas y
+            peinados los podrás encontrar en JIMBO´s. Ofrecemos todo tipo de
+            servicios de peluquería y estética.
+          </p>
+        </section>
+
+        <section class="pagServicio">
+          <div class="pagServicio__imagen pagServicio__imagen--barberia"></div>
+          <h4 class="pagServicio__titulo">Barbería</h4>
+          <p class="pagServicio__descripcion">
+            En JIMBO's podrás encontrar todo lo que necesitas para el cuidado
+            masculino: corte de pelo, peinado, tratamiento, afeitado, matizado,
+            etc. Sácale el mayor partido a tu barba.
+          </p>
+        </section>
+
+        <section class="pagServicio">
+          <div class="pagServicio__imagen pagServicio__imagen--asesoria"></div>
+          <h4 class="pagServicio__titulo">Asesoría de imagen</h4>
+          <p class="pagServicio__descripcion">
+            Por medio de entrevistas personalizadas con nuestro asesor de imagen
+            se obtiene un perfil que permite orientar a la persona sobre los
+            tonos y tipos de vestuario, maquillaje y peinado.
+          </p>
+        </section>
+
+        <section class="pagServicio">
+          <div
+            class="pagServicio__imagen pagServicio__imagen--aromaterapia"
+          ></div>
+          <h4 class="pagServicio__titulo">Aromaterapia</h4>
+          <p class="pagServicio__descripcion">
+            Técnica derivada de la herbolaria que utiliza compuestos vegetales y
+            los aceites esenciales extraídos de las plantas aromáticas para
+            mejorar la salud y el estado de ánimo mediante la inhalación o la
+            aplicación de los aceites sobre la piel.
+          </p>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <script>
+        const d = new Date();
+        let year = d.getFullYear();
+        document.write(
+          "Copyright ©" + year + "  | Página hecha por Jhon Jairo Gavilán R."
+        );
+      </script>
+      <a href="mailto:gavilanrodriguez@gmail.com">gavilanrodriguez@gmail.com</a>
+    </footer>
+  </body>
+</html>

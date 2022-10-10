@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peluquería Jimbo's</title>
+    <link rel="preload" href="css/normalize.css" as="style" />
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <link rel="preload" href="css/styles.css" as="style" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Galada&family=Lato:wght@700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="cabecera">
+        <div class="contenidoCabecera">
+          <div>
+            <h1>JIMBO's</h1>
+          </div>
+          <div>
+            <h2>Peluquería y SPA</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="navegacion">
+        <nav class="navegacion__contenedor">
+          <a href="index.html">Inicio</a>
+          <a href="nosotros.html">Nosotros</a>
+          <a href="servicios.html">Servicios</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+      </div>
+    </header>
+    <main class="contenedor sombra">
+      <section>
+        <h3 class="contacto-titulo">Contacto</h3>
+        <form class="formulario">
+          <fieldset>
+            <legend>
+              ¿Quieres saber mas sobre JIMBO's o quieres trabajar con nosotros?
+              ¡Contactanos!
+            </legend>
+
+            <div class="contenedor-campos">
+              <div class="campo">
+                <label>Nombre</label>
+                <input class="input-text" type="text" placeholder="Tu nombre" />
+              </div>
+
+              <div class="campo">
+                <label>Télefono</label>
+                <input
+                  class="input-text"
+                  type="tel"
+                  placeholder="Tu teléfono"
+                />
+              </div>
+
+              <div class="campo">
+                <label>Correo</label>
+                <input class="input-text" type="email" placeholder="Tu email" />
+              </div>
+
+              <div class="campo">
+                <label>Mensaje</label>
+                <textarea class="input-text"></textarea>
+              </div>
+            </div>
+            <!-- .contenedor-campos -->
+
+            <div>
+              <input class="boton" type="submit" value="Enviar" />
+            </div>
+          </fieldset>
+        </form>
+      </section>
+      <!-- FIN FORMULARIO -->
+
+      <section class="ubicacion">
+        <p>
+          Direccion: calle 2 # 14-5 vereda La Felicidad comarca occidental
+          <br />
+          Ciudad Melamuerde
+        </p>
+        <p>Telefono: (555) 123-4152</p>
+      </section>
+    </main>
+
+    <footer>
+      <script>
+        const d = new Date();
+        let year = d.getFullYear();
+        document.write(
+          "Copyright ©" + year + "  | Página hecha por Jhon Jairo Gavilán R."
+        );
+      </script>
+      <a href="mailto:gavilanrodriguez@gmail.com">gavilanrodriguez@gmail.com</a>
+    </footer>
+  </body>
+</html>
