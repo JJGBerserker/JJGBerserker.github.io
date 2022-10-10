@@ -1,0 +1,411 @@
+:root {
+  /* --primario: #0089c4; */
+
+  /*--primario: #0075ae;
+  --secundario: #334b49;
+  --primarioOscuro: #003b58;
+  --secundarioOscuro: #2c3d4a;*/
+
+  --primario: #850d0d;
+  --secundario: #334b49;
+  --primarioOscuro: #530000;
+  --secundarioOscuro: #162e2c;
+}
+
+h1 {
+  font-size: 2.7rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.imagen-background {
+  height: 20rem;
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 20% 50%;
+  filter: grayscale();
+}
+
+.titulo {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: rgba(113, 113, 113, 0.32);
+}
+
+.titulo-azul {
+  color: var(--primarioOscuro);
+  padding: 10px 0;
+}
+
+.subtitulo-oscuro {
+  color: var(--secundarioOscuro);
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .container {
+    max-width: 70%;
+  }
+
+  .imagen-background {
+    height: 45rem;
+  }
+}
+
+/*Seccion perfil*/
+.perfil-detalles {
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.perfil-detalles,
+.perfil {
+  text-align: center;
+}
+
+.perfil {
+  padding-top: 1rem;
+}
+
+.perfil h4 {
+  font-style: italic;
+  font-size: 1.2rem;
+  color: var(--secundario);
+}
+
+.perfil-detalle h3 {
+  color: var(--primario);
+}
+
+.perfil-detalle span {
+  font-weight: bold;
+}
+
+.imagen-perfil {
+  background-image: url(../img/img-perfil.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  width: 15rem;
+  height: 15rem;
+  margin: 40px 0;
+  border: 1px solid var(--primario);
+}
+
+@media (min-width: 768px) {
+  p{
+    font-size: 1.2rem;
+  }
+  .perfil-detalles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .perfil-detalle {
+    text-align: justify;
+    padding: 0 2rem;
+  }
+
+  .perfil-detalle p {
+    font-size: 1rem;
+  }
+
+  .perfil-detalle h3 {
+    margin-bottom: 1rem;
+  }
+
+  .perfil-detalle p a {
+    color: var(--primario);
+  }
+
+  .imagen-perfil {
+
+    width: 19rem;
+    height: 19rem;
+    margin: 0;
+    
+  }
+}
+
+/*Seccion formación y exp laboral*/
+.formacion,
+.proyectos {
+  background-color: var(--primario);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.formacion-detalles {
+  text-align: center;
+
+  border-top: 1px solid white;
+}
+
+.formacion-detalle {
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.formacion-detalle span {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.formacion h3 {
+  margin-top: 2rem;
+  font-weight: bold;
+}
+
+.formacion-detalle ul {
+  list-style: none;
+  padding: 0;
+}
+
+.formacion-detalle ul li {
+  margin: 10px auto;
+}
+
+@media (min-width: 768px) {
+  .formacion-detalles {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+  .formacion-detalle {
+    display: grid;
+    grid-template-columns: 30% 70%;
+  }
+  .formacion-detalle ul li {
+    list-style: outside;
+    margin-left: 35px;
+  }
+  .formacion h3 {
+    font-size: 2rem;
+  }
+}
+
+/*Seccion habilidades*/
+.habilidades {
+  text-align: center;
+}
+
+.habilidades-detalle {
+  color: var(--secundarioOscuro);
+  margin: auto 2rem;
+}
+
+.habilidad-detalle {
+  margin: 0.5rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nombre-habilidad {
+  margin-right: 10%;
+  text-align: left;
+}
+
+.checked {
+  color: orange;
+}
+
+@media (min-width: 768px) {
+  .habilidades-detalles {
+    padding: 2rem 0;
+    margin-left: 20%;
+  }
+  .habilidades-detalle {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .habilidad-detalle {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0.5rem 0;
+    text-align: left;
+  }
+}
+
+/*Sección proyectos*/
+.proyectos h3 {
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.image-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.proyectos-detalle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.proyecto-detalle {
+  border: 1px solid #2c3d4a;
+}
+.proyecto-detalle:hover {
+  border: none;
+}
+
+.proyectos-detalle:hover {
+  cursor: pointer;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+  opacity: 0;
+  transition: all ease-in-out 0.5s;
+}
+
+.proyectos-detalle:hover .overlay {
+  opacity: 1;
+  border: none;
+}
+
+.proyecto-detalle img {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  margin: auto;
+  transform: scale(1);
+  transition: all ease-in-out 0.5s;
+}
+
+.proyectos-detalle:hover img {
+  transform: scale(1.1);
+  filter: blur(2px);
+}
+
+.nombre-imagen {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  z-index: 4;
+  position: absolute;
+  opacity: 0;
+  transition: all ease-in-out 0.5s;
+  left: 0;
+  right: 0;
+  margin: auto;
+  
+}
+
+.nombre-imagen span{
+  font-style: italic;
+  font-size: 15px;
+}
+
+.proyectos-detalle:hover .nombre-imagen {
+  top: 40%;
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .image-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 2rem;
+  }
+  .proyecto-detalle {
+    height: 185px;
+  }
+}
+
+/*Sección Contacto*/
+
+footer {
+  background-color: #334b49;
+  padding: 2rem;
+}
+
+footer h2 {
+  color: white;
+  text-align: center;
+}
+
+.contacto {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.contacto {
+  padding: 1rem 0;
+}
+.contacto span {
+  font-size: 2rem;
+  color: white;
+}
+
+.contacto-detalle {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem auto;
+}
+
+.contacto-detalle a {
+  color: white;
+}
+
+.contenedor-imagen-perfil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .contacto {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  footer h2 {
+    margin-bottom: 2rem;
+  }
+}
+
+
