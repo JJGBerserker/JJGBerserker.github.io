@@ -37,7 +37,7 @@ a {
 
 .imagen-background {
   height: 20rem;
-  background-image: url(../img/background.jpg);
+  background-image: url(../img/background.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 20% 50%;
