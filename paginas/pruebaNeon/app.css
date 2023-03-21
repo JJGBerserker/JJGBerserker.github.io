@@ -1,0 +1,161 @@
+:root {
+    --colorPrimario: rgb(0, 174, 255);
+    --fuente: 'Train One', cursive;
+    --colorSecundario: rgb(229, 0, 236);
+    
+  }
+
+body {
+    font-size: 40px;
+    background-color: #010a01;
+    /*background-image: url("fondo.jpg");
+    background-size: cover;*/
+    font-family: var(--fuente);
+    margin: auto;
+}  
+
+
+
+h1{
+    
+    animation: pulsate 0.11s ease-in-out infinite alternate;
+}
+
+h1 > span{
+    
+    display: block;
+    padding: 5px;
+}
+
+.contenedor{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 200px;
+    flex-direction: column;
+}
+
+
+.neonText {
+color: #fff;
+text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px var(--colorPrimario),
+    0 0 82px var(--colorPrimario),
+    0 0 92px var(--colorPrimario),
+    0 0 102px var(--colorPrimario),
+    0 0 151px var(--colorPrimario);
+}
+.neonTextSec {
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px var(--colorSecundario),
+        0 0 82px var(--colorSecundario),
+        0 0 92px var(--colorSecundario),
+        0 0 102px var(--colorSecundario),
+        0 0 151px var(--colorSecundario);
+    }
+
+.pulsate {
+    animation: pulsate 1.5s infinite alternate;     
+}
+
+@keyframes pulsate {
+    
+    100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px var(--colorPrimario),
+        0 0 80px var(--colorPrimario),
+        0 0 90px var(--colorPrimario),
+        0 0 100px var(--colorPrimario),
+        0 0 150px var(--colorPrimario);
+    
+    }
+    
+    0% {
+  
+      text-shadow:
+      0 0 2px #fff,
+      0 0 4px #fff,
+      0 0 6px #fff,
+      0 0 10px var(--colorPrimario),
+      0 0 45px var(--colorPrimario),
+      0 0 55px var(--colorPrimario),
+      0 0 70px var(--colorPrimario),
+      0 0 80px var(--colorPrimario);
+  
+  }
+}
+
+/*
+0% {
+  
+      text-shadow:
+      0 0 2px #fff,
+      0 0 4px #fff,
+      0 0 6px #fff,
+      0 0 10px var(--colorPrimario),
+      0 0 45px var(--colorPrimario),
+      0 0 55px var(--colorPrimario),
+      0 0 70px var(--colorPrimario),
+      0 0 80px var(--colorPrimario);
+  
+  }
+*/
+
+.neonText2 {
+    color: #fff;
+    text-shadow:
+        0 0 3px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px var(--colorPrimario),
+        0 0 82px var(--colorPrimario),
+        0 0 92px var(--colorPrimario),
+        0 0 102px var(--colorPrimario),
+        0 0 151px var(--colorPrimario);
+}
+
+.pulsateSec {
+    animation: pulsateSec 1.5s infinite alternate;     
+}
+
+@keyframes pulsateSec {
+    
+    100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px var(--colorSecundario),
+        0 0 80px var(--colorSecundario),
+        0 0 90px var(--colorSecundario),
+        0 0 100px var(--colorSecundario),
+        0 0 150px var(--colorSecundario);
+    
+    }
+    
+    0% {
+  
+      text-shadow:
+      0 0 2px #fff,
+      0 0 4px #fff,
+      0 0 6px #fff,
+      0 0 10px var(--colorSecundario),
+      0 0 45px var(--colorSecundario),
+      0 0 55px var(--colorSecundario),
+      0 0 70px var(--colorSecundario),
+      0 0 80px var(--colorSecundario);
+  
+  }
+}
